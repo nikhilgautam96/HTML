@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Job Application</h2>
+        <form action="">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" />
+            <br />
+            <br />
+            <label for="email">Email ID: </label>
+            <input type="email" id="email" name="emailId" />
+            <br />
+            <br />
+            <label for="telephone">Phone No: </label>
+            <input
+                type="tel"
+                id="telephone"
+                name="phoneNumber"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+
+            <br />
+            <br />
+            <label for="file">Resume : </label>
+            <input type="file" id="file" name="file" />
+
+            <br />
+            <br />
+            <label for="experience">Experience (years) : </label>
+            <input
+                type="number"
+                id="experience"
+                name="experience"
+                min="0"
+                max="25" />
+
+            <br />
+            <br />
+            <fieldset>
+                <legend>Skills :</legend>
+
+                <label for="checkbox1">HTML</label>
+                <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox1"
+                    value="HTML" />
+
+                <label for="checkbox2">CSS</label>
+                <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox2"
+                    value="CSS" />
+
+                <label for="checkbox3">JS</label>
+                <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="checkbox3"
+                    value="JS" />
+            </fieldset>
+
+            <br />
+            <label for="education">Higher Education: </label>
+            <select id="education" name="education">
+                <option value="10">HSC</option>
+                <option value="12">SSC</option>
+                <option value="graduation">BTech.</option>
+                <option value="post graduation">MS</option>
+                <option value="phd">Phd</option>
+            </select>
+
+            <br />
+            <br />
+            <fieldset>
+                <legend>Availability :</legend>
+                <input type="radio" name="availability" id="fullTime" />
+                <label for="fullTime" value="fullTime">Full Time</label>
+                <br />
+                <input type="radio" name="availability" id="partTime" />
+                <label for="partTime" value="partTime">Part Time</label>
+            </fieldset>
+
+            <br />
+            <label for="textArea1">Additional Comments :</label>
+            <br />
+            <textarea
+                name="comments"
+                id="textArea1"
+                cols="30"
+                rows="5"></textarea>
+            <br />
+            <input type="submit" name="submit" value="Register" />
+        </form>
+    </body>
+</html>

@@ -7,6 +7,7 @@
         <title>Document</title>
     </head>
     <body>
+        <h2>Event Registration</h2>
         <form action="">
             <label for="name">Name : </label>
             <input type="text" id="name" name="name" />
@@ -16,8 +17,45 @@
             <input type="email" id="email" name="emailId" />
             <br />
             <br />
-            <label for="telephone">Email ID: </label>
-            <input type="tel" id="telephone" name="phoneNumber" />
+            <label for="telephone">Phone No: </label>
+            <input
+                type="tel"
+                id="telephone"
+                name="phoneNumber"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            <br />
+            <br />
+            <label for="occupation">Occupation: </label>
+            <select id="occupation" name="occupation">
+                <option value="businessman">Businessman</option>
+                <option value="farmer">Farmer</option>
+                <option value="salaried">Salaried</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+            <br />
+            <br />
+            <fieldset>
+                <legend>Topics of Interest :</legend>
+
+                <label for="checkbox1">HTML</label>
+                <input type="checkbox" name="checkbox1" id="checkbox1" />
+
+                <label for="checkbox2">CSS</label>
+                <input type="checkbox" name="checkbox2" id="checkbox2" />
+
+                <label for="checkbox3">JS</label>
+                <input type="checkbox" name="checkbox3" id="checkbox3" />
+            </fieldset>
+
+            <label for="textArea1">Comments :</label>
+            <br />
+            <textarea
+                name="comments"
+                id="textArea1"
+                cols="30"
+                rows="5"></textarea>
+            <br />
+            <input type="submit" name="submit" value="Register" />
         </form>
     </body>
 </html>
